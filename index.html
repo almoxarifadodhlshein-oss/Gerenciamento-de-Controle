@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Login - Gestão Almoxarifado</title>
+    <link rel="icon" type="image/png" href="images/logo.almoxarifado.png" />
+  </head>
+  <body class="login-page">
+    <main class="login-wrapper">
+      <section class="login-card">
+        <div class="login-brand">
+          <img src="images/logo.almoxarifado.png" alt="Logo DHL" class="login-logo" />
+          <span class="login-subtitle">GERENCIAMENTO DE CONTROLE</span>
+        </div>
+
+        <form id="login-form" class="login-form" autocomplete="off">
+          <div class="form-group">
+            <label for="email" class="form-label">E-MAIL</label>
+            <input id="email" name="email" type="email" class="form-input" placeholder="Digite seu e-mail corporativo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">SENHA</label>
+            <input id="password" name="password" type="password" class="form-input" placeholder="Digite sua senha" required />
+          </div>
+
+          <div id="login-error" class="form-error" style="color: red; margin-bottom: 10px; font-size: 14px;"></div>
+
+          <button type="submit" class="button login-button" id="btn-submit">ENTRAR</button>
+        </form>
+
+        <div class="login-footer-group">
+          <p class="login-footer">DHL Supply Chain - Direitos reservados ©2026</p>
+          <img src="images/dhl.png" alt="Logo DHL" class="footer-logo" />
+        </div>
+      </section>
+
+      <section class="login-visual">
+        <img src="images/edificio.dhl.jpg" alt="Edifício DHL" />
+      </section>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>
